@@ -115,6 +115,7 @@ async function onChange(e) {
               <p>{note.description}</p>
               <button onClick={() => deleteNote(note)}>Delete note</button>
               {
+			  // eslint-disable-next-line
                note.image && <img src={note.image} style={{width: 400}} />
               }
       </div>
