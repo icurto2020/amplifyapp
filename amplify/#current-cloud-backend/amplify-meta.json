@@ -1,0 +1,101 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify13473dee2e8a4-staging-174151-authRole",
+      "UnauthRoleArn": "arn:aws:iam::181169027421:role/amplify-amplify13473dee2e8a4-staging-174151-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::181169027421:role/amplify-amplify13473dee2e8a4-staging-174151-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplify13473dee2e8a4-staging-174151-deployment",
+      "UnauthRoleName": "amplify-amplify13473dee2e8a4-staging-174151-unauthRole",
+      "StackName": "amplify-amplify13473dee2e8a4-staging-174151",
+      "StackId": "arn:aws:cloudformation:us-east-2:181169027421:stack/amplify-amplify13473dee2e8a4-staging-174151/7a48c640-4bbb-11ec-8478-02fd07c740be",
+      "AmplifyAppId": "d37nz6b2luqvz1"
+    }
+  },
+  "auth": {
+    "amplifyappeccaf31c": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify13473dee2e8a4-staging-174151-deployment/amplify-cfn-templates/auth/amplifyappeccaf31c-cloudformation-template.json",
+        "logicalId": "authamplifyappeccaf31c"
+      },
+      "lastPushTimeStamp": "2021-11-23T01:58:00.269Z",
+      "output": {
+        "UserPoolId": "us-east-2_WgsPz9JY7",
+        "AppClientIDWeb": "7e8o8l2s9s6ide85bvhrakk9p5",
+        "AppClientID": "2gku37tol3dmb3kvkb4lprk9ab",
+        "IdentityPoolId": "us-east-2:869455f5-0b25-4304-b282-56db77b46f6b",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:181169027421:userpool/us-east-2_WgsPz9JY7",
+        "IdentityPoolName": "amplifyappeccaf31c_identitypool_eccaf31c__staging",
+        "UserPoolName": "amplifyappeccaf31c_userpool_eccaf31c"
+      },
+      "lastPushDirHash": "G4UgRgN8U8fTnMolU1MamERqbKY="
+    }
+  },
+  "api": {
+    "amplifyapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "apiKeyExpirationDate": "2021-12-23T00:52:49.518Z",
+              "description": "demo"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "etttql7czbbbvmot3rlfx3asgq",
+        "GraphQLAPIEndpointOutput": "https://outfj5olvrd3dggdyv7uzhszxq.appsync-api.us-east-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-sing53hjofc77bpjjzovx3fzi4"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify13473dee2e8a4-staging-174151-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiamplifyapp"
+      },
+      "lastPushTimeStamp": "2021-11-23T01:58:03.005Z",
+      "lastPushDirHash": "lvKN1PfSzSCLLhcaoVhXALl98DA="
+    }
+  },
+  "storage": {
+    "amplifyapp": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify13473dee2e8a4-staging-174151-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageamplifyapp"
+      },
+      "lastPushTimeStamp": "2021-11-23T01:58:03.005Z",
+      "output": {
+        "BucketName": "amplifyappb50a6fd7b73c48e2804a605e5879997a174151-staging",
+        "Region": "us-east-2"
+      },
+      "lastPushDirHash": "MJOZs6mZH6mWk4ykIQQSXa5UOjY="
+    }
+  }
+}
