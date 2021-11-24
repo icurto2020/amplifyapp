@@ -122,7 +122,8 @@ async function onChange(e) {
       ))
      }
       </div>
-      <signOut />
+	   <button onClick={signOut}>Sign out</button>
+ //     <signOut />
     </div>
   );
 }
