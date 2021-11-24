@@ -32,7 +32,7 @@ function App({ signOut, user }) {
   );
 }
 */
-function App() {
+function App({ signOut, user }) {
   const [notes, setNotes] = useState([]);
   const [formData, setFormData] = useState(initialFormState);
 
@@ -123,7 +123,6 @@ async function onChange(e) {
      }
       </div>
 	   <button onClick={signOut}>Sign out</button>
- //     <signOut />
     </div>
   );
 }
